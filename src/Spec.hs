@@ -5,7 +5,7 @@ import Test.Hspec
 
 correrTests :: IO ()
 correrTests = hspec $ do
-  describe "Test de ejemplo" $ do
-    it "El pdepreludat se instaló correctamente" $ do
-      doble 1 `shouldBe` 2
+  describe "Test de presionGolpe" $ do
+    it "La precion del golpe es  poder del golpe / fortaleza del objetivo" $ do
+      presionGolpe 200 "bolsa de entrenamiento" `shouldBe` 68
 
