@@ -19,4 +19,10 @@ fortaleza :: Objetivo -> Number
 fortaleza = (2*) . length
 
 
+type Golpe = Objetivo -> Number
 
+gomuGomu :: Golpe
+gomuGomu = presionGolpe 180
+
+normalesConsecutivos :: Golpe 
+normalesConsecutivos = presionGolpe 240
