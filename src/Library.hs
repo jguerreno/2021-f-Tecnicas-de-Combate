@@ -32,10 +32,7 @@ objetivoDificil :: Objetivo -> Bool
 objetivoDificil = (<100) . gomuGomu
 
 objetivoAccesible :: Objetivo -> Bool
-objetivoAccesible = entre200Y400 . normalesConsecutivos . focaliza
-
-entre200Y400 :: Number -> Bool
-entre200Y400 = between 200 400
+objetivoAccesible = between 200 400 . normalesConsecutivos . focaliza
 
 between :: Ord a => a -> a -> a -> Bool
 between bajo alto medio = bajo <= medio && medio <= alto

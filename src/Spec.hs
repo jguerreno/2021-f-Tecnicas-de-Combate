@@ -29,11 +29,6 @@ correrTests = hspec $ do
       objetivoDificil "puf" `shouldBe` False
 -- -----------------------------------------------------------------------------------    
 --          Tests Secundarios
-  describe "Test de entre200Y400" $ do
-    it "300 Cumple la condicion" $ do
-      entre200Y400 300 `shouldBe` True
-    it "20 no Cumple la condicion" $ do
-      entre200Y400 20 `shouldBe` False
   describe "Test de focaliza" $ do
     it "Focalizar un objetivo implica quedarse con las primeras 7 letras de su nombre" $ do
       focaliza "bolsa de entrenamiento" `shouldBe` "bolsa d"
